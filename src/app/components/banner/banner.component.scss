@@ -1,0 +1,113 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #272727;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &--title {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        &--text {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.4rem;
+            color: #fff;
+        }
+    }
+
+    &__video {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &--yt {
+            width: 100%;
+            height: 10rem;
+            background-color: #ccc;
+        }
+
+        &--button {
+            font-size: .9rem;
+            font-weight: 700;
+            border-radius: 1rem;
+            text-decoration: none;
+            text-align: center;
+            padding: 1rem;
+            background-color: orangered;
+            color: #fff;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .banner {
+        flex-direction: row;
+
+        &__content {
+            width: 50%;
+
+            &--title {
+                font-size: 2.2rem;
+            }
+
+            &--text {
+                line-height: 1.4rem;
+            }
+        }
+
+        &__video {
+            width: 50%;
+            align-self: center;
+
+            &--yt {
+                height: 15rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .banner {
+        align-items: center;
+        padding: 4rem;
+
+        &__content {
+            &--title {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 1040px) {
+    .banner {
+        &__content {
+            &--title {
+                font-size: 3.2rem;
+            }
+
+            &--text {
+                font-size: 1.1rem;
+            }
+        }
+
+        &__video {
+            &--yt {
+                width: 90%;
+            }
+
+            &--button {
+                width: 90%;
+            }
+        }
+    }
+}

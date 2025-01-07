@@ -1,27 +1,18 @@
-# BarbeiroDescomplicado
+## Links de afiliado
+página principal - [https://kiwify.app/KfMi9ik?afid=hqm946S8]
+checkout preço principal - [https://pay.kiwify.com.br/SNBbF7k?afid=hqm946S8] R$ 127,00
+checkout promoção especial - [https://pay.kiwify.com.br/ksHIECu?afid=hqm946S8] R$ 97,00
+checkout oferta relâmpago - [https://pay.kiwify.com.br/HxZxQRH?afid=hqm946S8] R$ 65,00
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- banner
+- faixa
+- sobre o curso
+- conteúdos do curso
+- cards
+- como é o curso por dentro
+- depoimentos
+- fotos de cortes
+- certificado e acesso vitalício
+- valor do curso
+- sobre o professor
+- rodape

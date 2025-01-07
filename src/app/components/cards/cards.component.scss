@@ -1,0 +1,24 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .cards {
+        &__content {
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+    }
+}
