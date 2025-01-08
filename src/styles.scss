@@ -18,3 +18,22 @@ body, * {
         max-width: 60vw;
     }
 }
+
+// estilização da barra lateral
+::-webkit-scrollbar {
+    width: .3rem;
+
+    // estiliza a barra de rolagem
+    &-thumb {
+        background-color: orangered;
+
+        &:hover {
+            background-color: orange;
+        }
+    }
+
+    // estiliza a trilha
+    &-track {
+        background-color: #fff;
+    }
+}
