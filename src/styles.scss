@@ -5,6 +5,11 @@ body, * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background: linear-gradient(85deg, #000 65%, #DC2626 150%);
+    color: #fff;
+}
+
 .section-titles {
     font-size: 1.9rem;
 
@@ -25,11 +30,8 @@ body, * {
 
     // estiliza a barra de rolagem
     &-thumb {
-        background-color: orangered;
-
-        &:hover {
-            background-color: orange;
-        }
+        background-color: #DC2626;
+        transition: all .3s linear;
     }
 
     // estiliza a trilha

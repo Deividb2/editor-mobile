@@ -7,10 +7,19 @@
     max-width: 20rem;
 
     &__icon {
-        width: 7rem;
-        height: 7rem;
-        background-color: #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+        height: 5rem;
         border-radius: 100%;
+        background-color: #000;
+        color: #DC2626;
+        border: 1px solid #000;
+        
+        ng-icon {
+            font-size: 2rem;
+        }
     }
 
     &__content {
@@ -24,7 +33,14 @@
 
         &--text {
             font-size: 1rem;
-            line-height: 1.3rem;
+            line-height: 1.4rem;
+            color: #ccc;
         }
+    }
+}
+
+@media(min-width: 768px) {
+    .card {
+        gap: 2rem;
     }
 }

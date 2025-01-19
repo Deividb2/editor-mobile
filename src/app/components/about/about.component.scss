@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
-    height: 200vh;
+    min-height: 200vh;
     
     &__content {
         display: flex;
@@ -36,6 +36,7 @@
         padding: 2rem 4rem;
         gap: 5rem;
         justify-content: space-around;
+        min-height: 100vh;
 
         &__content {
             padding: 0; 
@@ -45,6 +46,6 @@
 
 @media(min-width: 1024px) {
     .about {
-        height: 100vh;
+        min-height: 100vh;
     }
 }

@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'barbeiro-descomplicado' title`, () => {
+  it(`should have the 'editor-mobile' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('barbeiro-descomplicado');
+    expect(app.title).toEqual('editor-mobile');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, barbeiro-descomplicado');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, editor-mobile');
   });
 });

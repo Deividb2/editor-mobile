@@ -1,0 +1,42 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2rem;
+    min-height: 100vh;
+
+    &__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    &__questions {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) {
+    .faq {
+        justify-content: center;
+
+        &__questions {
+            width: 75vw;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .faq {
+        &__title {
+            font-size: 2.5rem;
+        }
+
+        &__questions {
+            width: 60vw;
+        }
+    }
+}

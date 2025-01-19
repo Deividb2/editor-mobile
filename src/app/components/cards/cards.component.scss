@@ -5,6 +5,7 @@
     align-items: center;
     gap: 3rem;
     padding: 4rem 2rem;
+    min-height: 100vh;
 
     &__content {
         display: flex;
@@ -16,9 +17,12 @@
 
 @media(min-width: 1024px) {
     .cards {
+        gap: 4rem;
+        
         &__content {
-            flex-wrap: nowrap;
             flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 5rem;
         }
     }
 }

@@ -14,4 +14,11 @@ import { bootstrapWhatsapp as whats } from '@ng-icons/bootstrap-icons';
 })
 export class WhatsComponent {
 
+  private message: string = "Olá, Deivid!!"
+  private phoneNumber: string = "5521977201714"
+  private encodedMessage = encodeURIComponent(this.message)
+
+  openWhats() {
+    window.open(`https://wa.me/${this.phoneNumber}?text=${this.encodedMessage}`)
+  }
 }

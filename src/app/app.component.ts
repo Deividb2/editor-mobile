@@ -10,5 +10,5 @@ import { HomeComponent } from "./pages/home/home.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'barbeiro-descomplicado';
+  title = 'editor-mobile';
 }
