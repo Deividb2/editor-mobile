@@ -3,6 +3,7 @@
 .banner {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 2rem;
     min-height: 100vh;
     padding: 4rem 2rem;
@@ -14,12 +15,12 @@
         gap: 1rem;
 
         &--title {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: #df0a0a;
         }
 
         &--text {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 500;
             line-height: 1.4rem;
             color: $cor3;
@@ -58,6 +59,7 @@
 @media(min-width: 768px) {
     .banner {
         flex-direction: row;
+        align-items: center;
 
         &__content {
             width: 50%;
@@ -84,7 +86,6 @@
 
 @media(min-width: 1024px) {
     .banner {
-        align-items: center;
         padding: 4rem;
 
         &__content {

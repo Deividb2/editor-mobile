@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
-    min-height: 200vh;
+    min-height: 100vh;
     
     &__content {
         display: flex;
@@ -23,7 +23,7 @@
     }
 
     &__img {
-        height: 20rem;
+        height: 30rem;
         width: 100%;
         background-color: #ccc;
     }

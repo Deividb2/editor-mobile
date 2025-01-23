@@ -1,10 +1,11 @@
 .faq {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 2.5rem;
     padding: 2rem;
-    min-height: 100vh;
+    min-height: 60vh;
 
     &__title {
         font-size: 2rem;
@@ -21,8 +22,6 @@
 
 @media(min-width: 768px) {
     .faq {
-        justify-content: center;
-
         &__questions {
             width: 75vw;
         }

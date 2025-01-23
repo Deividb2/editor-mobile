@@ -1,1 +1,19 @@
-<p>feedbacks works!</p>
+<section>
+    <h2>Veja o que alunos acham do curso</h2>
+    <div class="feedbacks">
+        <div class="feedbacks__arrows" (click)="prevFeedback()">
+            <ng-icon name="arrowLeft"></ng-icon>
+        </div>
+    
+        <div class="feedbacks__content">
+            <strong class="feedbacks__content--name">{{ feedbacks[currentIndex].name }}</strong>
+            <p class="feedbacks__content--comment">
+                "{{ feedbacks[currentIndex].comment }}"
+            </p>
+        </div>
+    
+        <div class="feedbacks__arrows" (click)="nextFeedback()">
+            <ng-icon name="arrowRight"></ng-icon>
+        </div>
+    </div>
+</section>
