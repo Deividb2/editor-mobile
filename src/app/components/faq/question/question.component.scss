@@ -1,7 +1,7 @@
 .questionFaq {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    cursor: default;
     
     &__question {
         display: flex;
@@ -71,5 +71,11 @@
                 font-size: 1.7rem;
             }
         }
+    }
+}
+
+@media(min-width: 1024px) {
+    .questionFaq {
+        cursor: pointer;
     }
 }
