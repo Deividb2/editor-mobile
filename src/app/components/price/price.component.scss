@@ -1,0 +1,125 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    min-height: 100vh;
+    padding: 1rem;
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .price {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        max-width: 25rem;
+        background-color: #fff;
+        color: #000;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 2rem #DC2626;
+        
+        &__discount {
+            text-align: center;
+            font-weight: 700;
+            padding: 1rem;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            background-color: #000;
+            color: #fff;
+        }
+
+        &__price {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            text-align: center;
+
+            &--before {
+                font-size: .9rem;
+            }
+
+            &--now {
+                span {
+                    font-size: 1.5rem;
+                }
+                font-size: 2.5rem;
+            }
+
+            &--cashPrice {
+                font-size: .9rem;
+            }
+        }
+
+        &__benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            list-style: none;
+            padding: 0 1rem;
+
+            li {
+                ng-icon {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        &__link {
+            padding: 1.5rem 1rem;
+            text-align: center;
+            background-color: #ccc;
+            margin: 0 .5rem;
+            border-radius: 1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: #DC2626;
+            color: #fff;
+            font-weight: 700;
+            font-size: .9rem;
+        }
+
+        &__payments {
+            background: url(../../../assets/media/images/payments.png) no-repeat center / contain;
+            width: 80%;
+            height: 5rem;
+            align-self: center;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    main {
+        margin-bottom: 2rem;
+        h2 {
+            max-width: 40rem;
+        }
+
+        .price {
+            &__benefits {
+                padding: 0 2rem;
+            }
+
+            &__price {
+
+                &--now {
+                    span {
+                        font-size: 2rem;
+                    }   
+
+                    font-size: 3.5rem;
+                }
+            }
+
+            &__link {
+                padding: 1rem;
+                margin: 0 1rem;
+            }
+        }
+    }
+}

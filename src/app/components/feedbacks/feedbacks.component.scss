@@ -4,7 +4,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  min-height: 60vh;
+  min-height: 100vh;
   padding: 4rem 2rem;
 
   h2 {
@@ -14,62 +14,42 @@ section {
 
   .feedbacks {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 
-    &__arrows {
-        display: none;
-    }
+    &__comment {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      width: 100%;
+      max-width: 30rem;
+      min-height: 12rem;
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1rem;
+      &--stars {
+        color: gold;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid #ccc;
+      }
 
-        &--name {
-         font-size: 1.1rem; 
-         color: #DC2626;  
-        }
-
-        &--comment {
-            font-size: 1rem;
-            line-height: 1.4rem;
-        }
+      &--text {
+        padding-top: .5rem;
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+      }
     }
   }
+
 }
 
 @media(min-width: 768px) {
   section {
-
     h2 {
       font-size: 2.5rem;
       max-width: 40rem;
-    }
-
-    .feedbacks {
-      max-width: 40rem;
-      gap: 3rem;
-
-      &__arrows {
-        font-size: 3rem;
-        color: #DC2626;
-        display: block;
-      }
-
-      &__content {
-
-        &--name {
-          font-size: 1.3rem;
-        }
-
-        &--comment {
-          font-size: 1.3rem;
-          line-height: 1.7rem;
-          width: 30rem;
-        }
-      }
     }
   }
 }
