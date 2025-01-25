@@ -9,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  private message: string = "Olá, Deivid!!"
+  private phoneNumber: string = "5521977201714"
+  private encodedMessage = encodeURIComponent(this.message)
+
+  openWhats() {
+    window.open(`https://wa.me/${this.phoneNumber}?text=${this.encodedMessage}`)
+  }
+
 }

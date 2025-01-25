@@ -20,6 +20,7 @@
 
         &--dev {
             font-size: .9rem;
+            cursor: pointer;
 
             a {
                 text-decoration: none;
@@ -31,6 +32,7 @@
 
         span {
             display: none;
+            cursor: default;
         }
         
         &--privacy {
@@ -44,6 +46,10 @@
     .footer {
         &__text {
             flex-direction: row;
+
+            &--dev {
+                font-size: 1rem;
+            }
 
             span {
                 display: block;
