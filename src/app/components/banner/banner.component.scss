@@ -51,9 +51,24 @@
             text-decoration: none;
             text-align: center;
             padding: 1rem;
-            background-color: $primary-color;
+            background: #DC2626;
             color: #fff;
+
+            animation: pulseOut 1.5s infinite alternate-reverse;
+            transition: all 1s ease-out;
+            animation-delay: 2s;
         }
+    }
+}
+
+@keyframes pulseOut {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+        box-shadow: 1px 1px 1rem #DC2626;
     }
 }
 
