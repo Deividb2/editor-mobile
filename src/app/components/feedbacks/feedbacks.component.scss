@@ -1,3 +1,5 @@
+@use "../../../assets/styles/variables" as *;
+
 section {
   display: flex;
   flex-direction: column;
@@ -23,16 +25,16 @@ section {
       display: flex;
       flex-direction: column;
       gap: .5rem;
-      border: 1px solid #ccc;
+      border: 1px solid $secundary-color;
       padding: 1rem;
       width: 100%;
       max-width: 30rem;
       min-height: 12rem;
 
       &--stars {
-        color: gold;
+        color: $stars-feedback-color;
         padding-bottom: .5rem;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid $secundary-color;
       }
 
       &--text {

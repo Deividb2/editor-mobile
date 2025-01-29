@@ -1,3 +1,5 @@
+@use "../../../assets/styles/variables" as *;
+
 .whats {
     display: flex;
     justify-content: center;
@@ -6,8 +8,8 @@
     height: 4rem;
     width: 4rem;
     border-radius: 100%;
-    background-color: rgb(8, 193, 8);
-    color: #fff;
+    background-color: $whatsapp-bg;
+    color: $white-default;
     position: fixed;
     bottom: 2rem;
     right: 2rem;

@@ -1,3 +1,5 @@
+@use "../../../assets/styles/variables" as *;
+
 .range {
     display: flex;
     flex-direction: column;
@@ -13,7 +15,7 @@
         
         &--icon {
             font-size: 2rem;
-            color: #DC2626;
+            color: $primary-color;
         }
 
         &--title {

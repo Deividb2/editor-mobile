@@ -1,3 +1,5 @@
+@use "../../../../assets/styles/variables" as *;
+
 .card {
     display: flex;
     flex-direction: column;
@@ -13,9 +15,9 @@
         width: 5rem;
         height: 5rem;
         border-radius: 100%;
-        background-color: #000;
-        color: #DC2626;
-        border: 1px solid #000;
+        background-color: $black-default;
+        color: $primary-color;
+        border: 1px solid $black-default;
         
         ng-icon {
             font-size: 2rem;
@@ -34,7 +36,7 @@
         &--text {
             font-size: 1rem;
             line-height: 1.4rem;
-            color: #ccc;
+            color: $secundary-color;
         }
     }
 }
