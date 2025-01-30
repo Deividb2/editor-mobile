@@ -1,12 +1,12 @@
 <div class="questionFaq" (click)="hendleResponse()">
     <div class="questionFaq__question">
-        <strong>{{ question }}</strong>
-        <ng-icon name="matKeyboardArrowDown" [class.changeIcon] = "stateResponse"></ng-icon>
+        <h3>{{ question }}</h3>
+        <ng-icon name="matKeyboardArrowDown" [class.changeIcon]="stateResponse"></ng-icon>
     </div>
-    <div class="questionFaq__response" [class.hendleResponse] = "stateResponse">
+    <div class="questionFaq__response" [class.hendleResponse]="stateResponse">
         <div>
             <div class="questionFaq__response--point"></div>
         </div>
-        <strong>{{ response }}</strong>
+        <h4>{{ response }}</h4>
     </div>
 </div>

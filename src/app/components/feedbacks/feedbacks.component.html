@@ -1,13 +1,11 @@
 <section>
-    <h2>Veja o que alunos acham do curso</h2>
-    <div class="feedbacks">
-
+    <h2>Veja o que os alunos acham do curso</h2>
+    <aside class="feedbacks">
         <div class="feedbacks__comment" *ngFor="let item of feedbacks">
             <div class="feedbacks__comment--stars">
                 <ng-icon name="matStar" *ngFor="let i of [].constructor(5)"></ng-icon>
             </div>
-            <p class="feedbacks__comment--text">{{ item.comment }}</p>
+            <h3 class="feedbacks__comment--text">{{ item.comment }}</h3>
         </div>
-
-    </div>
+    </aside>
 </section>

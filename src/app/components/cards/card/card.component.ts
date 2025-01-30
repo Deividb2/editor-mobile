@@ -11,7 +11,7 @@ import { NgIcon, provideIcons } from '@ng-icons/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  @Input() title!: string
-  @Input() text!: string
-  @Input() nameIcon!: string
+  @Input({ required: true }) titleCard!: string
+  @Input({ required: true }) text!: string
+  @Input({ required: true }) nameIcon!: string
 }

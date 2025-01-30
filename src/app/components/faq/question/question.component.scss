@@ -13,7 +13,7 @@
         border: 1px solid $secundary-color;
         border-radius: .3rem;
         
-        strong {
+        h3 {
             font-weight: 400;
             font-size: 1.1rem;
         }
@@ -41,7 +41,7 @@
             border-radius: 100%;
         }
         
-        strong {
+        h4 {
             font-weight: 400;
             line-height: 1.4rem;
             color: $secundary-color;
@@ -65,7 +65,7 @@
         &__question {
             padding: 1.2rem 1.5rem;
             
-            strong {
+            h3 {
                 font-size: 1.2rem;
             }
 

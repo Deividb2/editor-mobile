@@ -21,7 +21,7 @@ export class FeedbacksComponent {
       comment: 'Ótimo amigos. Depois que fiz o curso estou conseguindo trabalhar na área de videomaker. Se Deus quiser, logo, logo vou sair da CLT.'
     },
     {
-      comment: 'Estou gostando bastante. Eu já tinha feito ouros cursos parecidos, mas estava faltando pra mim, algo que eu conseguisse aplicar mais no meu dia a dia na loja.'
+      comment: 'Estou gostando bastante. Eu já tinha feito outros cursos parecidos, mas estava faltando pra mim, algo que eu conseguisse aplicar mais no meu dia a dia na loja.'
     },
     {
       comment: 'Estou tendo várias sacadas com o curso. Além de todo o suporte. Esse contato podendo tirar dúvidas com você é um enorme diferencial.'
@@ -30,9 +30,6 @@ export class FeedbacksComponent {
       comment: "Gostaria de te agradecer pelas aulas, por toda a ajuda que você nos proporciona aqui no grupo, sempre tira as dúvidas e dá críticas construtivas sobre os nossos vídeos. A respeito do curso, muito didático, muito direto, muito 'simples' e de fácil entendimento até mesmo pra quem nunca teve contato com ferramentas de gravação e edição de vídeos. Foi o melhor investimento que fiz."
     }
   ];
-  
-  
-  
 }
 
 interface IFeedbacks {

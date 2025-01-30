@@ -10,20 +10,6 @@ body {
     color: #fff;
 }
 
-.section-titles {
-    font-size: 1.9rem;
-
-    @media(min-width: 768px) {
-        font-size: 2.1rem;
-        text-align: center;
-        max-width: 70vw;
-    }
-
-    @media(min-width: 1024px) {
-        max-width: 60vw;
-    }
-}
-
 // estilização da barra lateral
 ::-webkit-scrollbar {
     width: .3rem;
