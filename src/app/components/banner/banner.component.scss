@@ -7,9 +7,6 @@
     min-height: 100vh;
     padding: 4rem 0;
 
-    max-width: 1440px;
-    justify-self: center;
-
     &__content {
         display: flex;
         flex-direction: column;
@@ -131,5 +128,12 @@
                 font-size: 1.1rem;
             }
         }
+    }
+}
+
+@media(min-width: 2000px) {
+    .banner {
+        max-width: 1440px;
+        justify-self: center;
     }
 }
