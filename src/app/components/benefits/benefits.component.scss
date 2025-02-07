@@ -1,0 +1,93 @@
+@use "../../../assets/styles/variables" as *;
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    min-height: 100vh;
+    padding: 4rem 1rem;
+    
+    &__title {
+        font-size: 2.5rem;
+        padding: 0 1rem;
+        
+        strong {
+            color: $primary-color;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(20vh, 1fr);
+        gap: 1.5rem;
+        width: 100%;
+        min-height: 60vh;
+        padding: 1.5rem 1rem;
+        border-radius: 1rem;
+
+        background-color: $white-default;
+
+        &--card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+            background-color: $black-light;
+            padding: 2rem 1.5rem;
+            border-radius: inherit;
+
+            &__icon {
+                font-size: 3rem;
+                color: $primary-color;
+            }
+
+            &__text {
+                font-size: 1rem;
+                font-weight: 700;
+                text-align: center;
+                color: $white-default;
+                line-height: 1.4rem;
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .benefits {
+        gap: 3rem;
+
+        &__title {
+            text-align: center;
+            max-width: 70vw;
+        }
+
+        &__cards {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, minmax(10rem, 1fr));
+            width: 95%;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .benefits {
+        &__cards {
+            gap: 2rem;
+            padding: 2rem; 
+        }
+    }
+}
+
+@media(min-width: 1440px) {
+    .benefits {
+        max-width: 1440px;
+        justify-self: center;
+    }
+}

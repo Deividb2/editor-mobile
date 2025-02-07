@@ -1,0 +1,11 @@
+<section class="benefits">
+    <h2 class="benefits__title">Aplicando as estratégias do <strong>Editor Mobile</strong> você vai:</h2>
+    <div class="benefits__cards">
+        <div class="benefits__cards--card" *ngFor="let benefits of benefits">
+            <div class="benefits__cards--card__icon">
+                <ng-icon [name]="benefits.icon"></ng-icon>
+            </div>
+            <h3 class="benefits__cards--card__text">{{ benefits.title }}</h3>
+        </div>
+    </div>
+</section>
