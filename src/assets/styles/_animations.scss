@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+.button-price-animation {
+    animation: pulseOutButton 1.5s infinite alternate-reverse;
+    transition: all 1s ease-out;
+    animation-delay: 2s;
+}
+
+@keyframes pulseOutButton {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+        box-shadow: 1px 1px 1rem $primary-color;
+    }
+}

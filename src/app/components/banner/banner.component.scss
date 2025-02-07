@@ -1,4 +1,5 @@
 @use "../../../assets/styles/variables" as *;
+@use "../../../assets/styles/animations";
 
 .banner {
     display: flex;
@@ -20,7 +21,7 @@
             font-size: 1rem;
             
             a {
-                color: #ccc;
+                color: $secundary-color;
                 text-transform: uppercase;
                 font-weight: 700;
             }
@@ -74,22 +75,7 @@
             padding: 1rem;
             background: $primary-color;
             color: $white-default;
-
-            animation: pulseOut 1.5s infinite alternate-reverse;
-            transition: all 1s ease-out;
-            animation-delay: 2s;
         }
-    }
-}
-
-@keyframes pulseOut {
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(1.1);
-        box-shadow: 1px 1px 1rem $primary-color;
     }
 }
 

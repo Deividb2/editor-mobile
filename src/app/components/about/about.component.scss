@@ -1,7 +1,10 @@
+@use "../../../assets/styles/variables" as *;
+@use "../../../assets/styles/animations";
+
 .about {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr auto auto;
     min-height: 100vh;
 
     &__content {
@@ -20,6 +23,10 @@
             gap: 1rem;
             line-height: 1.4rem;
         }
+
+        &--btn1 {
+            display: none;
+        }
     }
 
     &__img {
@@ -37,6 +44,18 @@
         &--vertical {
             display: none;
         }
+    }
+
+    &__btn2 {
+        text-decoration: none;
+        text-align: center;
+        font-size: .9rem;
+        font-weight: 700;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: $primary-color;
+        color: $white-default;
+        margin: 2rem 1rem 1rem;
     }
 }
 
@@ -67,8 +86,21 @@
         min-height: 100vh;
 
         &__content {
-            padding: 0; 
+            padding: 0;
+
+            &--btn1 {
+                display: block;
+                align-self: start;
+                text-decoration: none;
+                font-size: .9rem;
+                font-weight: 700;
+                padding: 1rem 2rem;
+                background-color: $primary-color;
+                color: $white-default;
+                border-radius: 1rem;
+            }
         }
+
 
         &__img {
             align-items: flex-start;
@@ -83,6 +115,10 @@
                 height: 70%;
                 margin-left: 1rem;
             }
+        }
+
+        &__btn2 {
+            display: none;
         }
     }
 }
