@@ -11,11 +11,12 @@ import { FeedbacksComponent } from "../../components/feedbacks/feedbacks.compone
 import { FaqComponent } from "../../components/faq/faq.component";
 import { PriceComponent } from "../../components/price/price.component";
 import { BenefitsComponent } from "../../components/benefits/benefits.component";
+import { TextBlockComponent } from "../../components/text-block/text-block.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [BannerComponent, RangeComponent, CardsComponent, FooterComponent, WhatsComponent, AboutComponent, FeedbacksComponent, FaqComponent, PriceComponent, BenefitsComponent],
+  imports: [BannerComponent, RangeComponent, CardsComponent, FooterComponent, WhatsComponent, AboutComponent, FeedbacksComponent, FaqComponent, PriceComponent, BenefitsComponent, TextBlockComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
